@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="g58544.chess.model.PositionTest" time="0.01" tests="8" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="java.specification.version" value="16"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/lovnka/echecs-58544/projetEchec/target/test-classes:/Users/lovnka/echecs-58544/projetEchec/target/classes:/Users/lovnka/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/lovnka/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/lovnka/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/lovnka/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BE"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/lovnka/echecs-58544/projetEchec/target/surefire/surefirebooter10163670582502919583.jar /Users/lovnka/echecs-58544/projetEchec/target/surefire 2022-03-17T14-04-46_922-jvmRun1 surefire8397331022661302346tmp surefire_012049473652023198042tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="g58544.chess.model.PositionTest"/>
+    <property name="surefire.test.class.path" value="/Users/lovnka/echecs-58544/projetEchec/target/test-classes:/Users/lovnka/echecs-58544/projetEchec/target/classes:/Users/lovnka/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/lovnka/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/lovnka/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/lovnka/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/lovnka"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/lovnka/echecs-58544/projetEchec"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/lovnka/echecs-58544/projetEchec/target/surefire/surefirebooter10163670582502919583.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="16.0.2+7-67"/>
+    <property name="user.name" value="lovnka"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/Apache NetBeans 12.4.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/Users/lovnka/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/90/sxjyvb3s1yd5b13ll4zggcbc0000gn/T/"/>
+    <property name="java.version" value="16.0.2"/>
+    <property name="user.dir" value="/Users/lovnka/echecs-58544/projetEchec"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/lovnka/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="16.0.2+7-67"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="60.0"/>
+  </properties>
+  <testcase name="g58544.chess.model.PositionTest.testNW" classname="g58544.chess.model.PositionTest" time="0.003">
+    <failure message="expected: &lt;g58544.chess.model.Position@5c8da962&gt; but was: &lt;g58544.chess.model.Position@512ddf17&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <g58544.chess.model.Position@5c8da962> but was: <g58544.chess.model.Position@512ddf17>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at g58544.chess.model.PositionTest.testNW(PositionTest.java:25)
+]]></failure>
+    <system-out><![CDATA[North West
+]]></system-out>
+  </testcase>
+  <testcase name="g58544.chess.model.PositionTest.testN" classname="g58544.chess.model.PositionTest" time="0">
+    <failure message="expected: &lt;g58544.chess.model.Position@7a7b0070&gt; but was: &lt;g58544.chess.model.Position@39a054a5&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <g58544.chess.model.Position@7a7b0070> but was: <g58544.chess.model.Position@39a054a5>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at g58544.chess.model.PositionTest.testN(PositionTest.java:39)
+]]></failure>
+    <system-out><![CDATA[North
+]]></system-out>
+  </testcase>
+  <testcase name="g58544.chess.model.PositionTest.testNE" classname="g58544.chess.model.PositionTest" time="0">
+    <failure message="expected: &lt;g58544.chess.model.Position@6ed3ef1&gt; but was: &lt;g58544.chess.model.Position@2437c6dc&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <g58544.chess.model.Position@6ed3ef1> but was: <g58544.chess.model.Position@2437c6dc>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at g58544.chess.model.PositionTest.testNE(PositionTest.java:52)
+]]></failure>
+    <system-out><![CDATA[North East
+]]></system-out>
+  </testcase>
+  <testcase name="g58544.chess.model.PositionTest.testW" classname="g58544.chess.model.PositionTest" time="0">
+    <failure message="expected: &lt;g58544.chess.model.Position@e73f9ac&gt; but was: &lt;g58544.chess.model.Position@61064425&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <g58544.chess.model.Position@e73f9ac> but was: <g58544.chess.model.Position@61064425>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at g58544.chess.model.PositionTest.testW(PositionTest.java:65)
+]]></failure>
+    <system-out><![CDATA[West
+]]></system-out>
+  </testcase>
+  <testcase name="g58544.chess.model.PositionTest.testE" classname="g58544.chess.model.PositionTest" time="0.001">
+    <failure message="expected: &lt;g58544.chess.model.Position@299a06ac&gt; but was: &lt;g58544.chess.model.Position@383534aa&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <g58544.chess.model.Position@299a06ac> but was: <g58544.chess.model.Position@383534aa>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at g58544.chess.model.PositionTest.testE(PositionTest.java:78)
+]]></failure>
+    <system-out><![CDATA[Eeast
+]]></system-out>
+  </testcase>
+  <testcase name="g58544.chess.model.PositionTest.testSW" classname="g58544.chess.model.PositionTest" time="0"/>
+  <testcase name="g58544.chess.model.PositionTest.testS" classname="g58544.chess.model.PositionTest" time="0.001">
+    <failure message="expected: &lt;g58544.chess.model.Position@7b3300e5&gt; but was: &lt;g58544.chess.model.Position@2e5c649&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <g58544.chess.model.Position@7b3300e5> but was: <g58544.chess.model.Position@2e5c649>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at g58544.chess.model.PositionTest.testS(PositionTest.java:104)
+]]></failure>
+    <system-out><![CDATA[South
+]]></system-out>
+  </testcase>
+  <testcase name="g58544.chess.model.PositionTest.testSE" classname="g58544.chess.model.PositionTest" time="0.001">
+    <failure message="expected: &lt;g58544.chess.model.Position@7382f612&gt; but was: &lt;g58544.chess.model.Position@1055e4af&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <g58544.chess.model.Position@7382f612> but was: <g58544.chess.model.Position@1055e4af>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at g58544.chess.model.PositionTest.testSE(PositionTest.java:117)
+]]></failure>
+    <system-out><![CDATA[South East
+]]></system-out>
+  </testcase>
+</testsuite>
