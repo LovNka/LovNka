@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styleSheet/Stylep2.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/javaScript/jquery-3.6.0.min.js"></script>
+    <title>BMI_2</title>
+  </head>
+  <body>
+    <header>
+      <h1>L'indice de masse corporelle</h1>
+    </header>
+    <nav>
+      <ul>
+        <li class="liste"><a href="/html/index.html">Acceuil</a></li>
+        <li class="liste"><a href="/html/pag2.html">IMC</a></li>
+        <li class="liste"><a href="/html/page3.html">Extra</a></li>
+      </ul>
+    </nav>
+    <main>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            <h5>l'IMC</h5>
+            
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            <h5>Comment ça fonctionne</h5>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            <h5>Calcule ton IMC</h5>
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+        >
+        <p>
+          L’indice de masse corporelle ou IMC (en anglais, body mass index ou BMI) est une grandeur qui permet d'estimer la corpulence d’une personne. Inventé au milieu du XIXE siècle par Adolphe Quetelet, mathématicien belge et l'un des fondateurs de la statistique moderne, cet indice est appelé aussi l'indice de Quetelet.
+        </p>
+          <table> 
+              <thead>
+                <tr>
+                    <th>IMC</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>moins de 16,5</td>
+                    <td>dénutrition</td>
+                </tr>
+                <tr> 
+                    <td>16,5 à 18,5</td>
+                    <td>maigreur</td>
+                </tr>
+                <tr>
+                    <td>18,5 à 25</td>
+                    <td>poids normal</td>
+                </tr>
+                <tr>
+                    <td>25 à 30</td>
+                    <td>surpoids</td>
+                </tr>
+                <tr>
+                    <td>30 à 35</td>
+                    <td>obésité modérée</td>
+                </tr>
+                <tr>
+                    <td>35 à 40</td>
+                    <td>obésité sévère</td>
+                </tr>
+                <tr>
+                    <td>40 et +</td>
+                    <td>obésité morbide ou massive</td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+        >
+          <p>
+            IMC=P/(T*T) (selon l'OMS) avec P la masse corporelle (en kilogrammes) et T la taille (en mètres).
+            L'IMC s'exprime donc en kg/m2. Ce n'est donc pas un indice (valeur sans unité) au sens mathématique du terme.
+            <br>Exemple :
+          <ul>
+            <li> soit une personne de 1,74 m et d'un poids de 65,5 kg ;</li>
+            <li> son IMC = 65,5 / 1,742 = 65,5 / 3,0276 = 21,6 (21,6 kg/m2).</li>
+          <ul>
+          </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-contact"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+        >
+          <h6>Entrez votre poids en Kilogramme et votre taille mètre. </h6>
+          <form id="calcul">
+            <label for="poids">Poids en Kg</label>
+            <input id="poids" type="number" min="0" max="300">
+            <br>
+            <label for="taille" >Taille en m</label>
+            <input id="taille" type="number" step="0.01" min="0" max="2.9">  
+          </form> 
+          <button type="button" class="calculator" >Calculer</button>
+          <div id="apres_calcul" class="apres_calcul">
+            <table id="table"> 
+                <thead>
+                  <tr>
+                      <th>Poids(kg)</th>
+                      <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="denutrition" >
+                      <td id="p1"></td>
+                      <td>dénutrition</td>
+                  </tr>
+                  <tr id="maigreur"> 
+                      <td id="p2"></td>
+                      <td>maigreur</td>
+                  </tr>
+                  <tr id="poids_normal">
+                      <td id="p3"></td>
+                      <td>poids normal</td>
+                  </tr>
+                  <tr id="surpoids">
+                      <td id="p4"></td>
+                      <td>surpoids</td>
+                  </tr>
+                  <tr id="obesite_morbide">
+                      <td id="p5"></td>
+                      <td>obésité modérée</td>
+                  </tr>
+                  <tr id="obesite_severe">
+                      <td id="p6"></td>
+                      <td>obésité sévère</td>
+                  </tr>
+                  <tr id="obesite_morb_mas">
+                      <td id="p7"></td>
+                      <td>obésité morbide ou massive</td>
+                  </tr>
+                </tbody>
+            </table>
+            <br>
+            <p>Merci pour votre confiance!! </p>
+            <p> 
+              Pour un poids de <mark id="lePoids"></mark> 
+              et une taille de <mark id="laTaille"></mark>
+              votre imc est de <mark id="lImc"></mark> <br>
+              Qui correspond à <mark id="categorie"></mark>. 
+            </p>
+            <p>Appuyez sur "Enregistrer" pour enrgistrer vos données</p>
+            <button type="button" class="save">Enregistrer</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>58544 - Nkurunziza Aimé - B143 - NRI</p>
+    </footer>
+    <script src="/javaScript/scripP2.js"></script>
+  </body>
+</html>
